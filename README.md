@@ -34,9 +34,9 @@ Summary statistics are saved automatically in `.xlsx` format using `openpyxl`.
 
 ---
 
-⚙️ Installation and Standalone Setup (Detailed)
+⚙️ Installation and Standalone Setup 
 
-Follow these steps to set up CoreSummaryStat + Excel Summary Generator App on your machine and optionally create a standalone executable so users can run it without Python.
+Follow these steps to set up CoreSummaryStat on your machine and optionally create a standalone executable so users can run it without Python.
 
 1️⃣ Install Python
 
