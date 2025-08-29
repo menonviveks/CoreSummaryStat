@@ -133,7 +133,7 @@ Build the executable:
 ```
 pyinstaller --noconsole --onefile --icon=icon.ico CoreSummarystat.py
 ```
-Place the icon in the same folder (.ico format)
+
 Locate the .exe in the dist/ folder.
 
 Share the .exe with any required data files; users can double-click to run the app.
