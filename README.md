@@ -1,4 +1,4 @@
-# 🚀 CoreSummaryStat: Excel Summary Generator App
+# 📋 CoreSummaryStat: Excel Summary Generator App
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
