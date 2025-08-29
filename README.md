@@ -11,7 +11,7 @@
 
 ## 📝 Overview
 **CoreSummaryStat** is a Python-based tool that generates **comprehensive summary statistics** from datasets and exports them into Excel.  
-The **Excel Summary Generator App** provides an interactive interface to load data, compute statistics, and save results, even for users with no programming experience.
+This excel summary generator application provides an interactive interface to load data, compute statistics, and save results, even for users with no programming experience.
 
 ---
 
