@@ -42,3 +42,77 @@ Clone the repository:
 ```bash
 git clone https://github.com/username/CoreSummaryStat.git
 cd CoreSummaryStat
+```
+
+🛠 Usage
+Using as a Python module
+```
+from core_summary import summarize
+import pandas as pd
+
+df = pd.read_csv('data/sample_data.csv')
+summary_df = summarize(df)
+summary_df.to_excel('output/summary.xlsx', index=False)
+```
+Using the Excel Summary Generator App
+```
+python app.py
+
+```
+Follow the prompts to select a dataset.
+
+The app generates summary statistics and saves them as an Excel file.
+
+🖥 Making the App External / Executable
+
+You can convert the Python app into a standalone Windows executable:
+
+Install pyinstaller:
+```
+pip install pyinstaller
+
+```
+Build the executable:
+```
+pyinstaller --onefile app.py
+
+```
+Find the executable in the dist folder.
+
+Share the .exe along with any required data files; users can run it by double-clicking.
+
+📂 Project Structure
+```
+CoreSummaryStat/
+│
+├── core_summary.py        # Core functions for summary statistics
+├── app.py                 # Excel Summary Generator interface
+├── requirements.txt       # Python dependencies
+├── README.md              # Project documentation
+├── .gitignore             # Ignore unnecessary files
+└── data/                  # Sample datasets
+```
+🤝 Contributing
+
+Fork the repository
+
+Create a new branch:
+```
+git checkout -b feature-name
+```
+
+Commit your changes:
+```
+git commit -m "Add feature"
+```
+
+Push to the branch:
+```
+git push origin feature-name
+
+```
+Open a Pull Request
+
+📜 License
+
+This project is licensed under the MIT License.
