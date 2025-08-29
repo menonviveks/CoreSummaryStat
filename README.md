@@ -35,52 +35,115 @@ Generate histograms, boxplots, or charts for exploratory analysis.
 
 ---
 
-## ⚙️ Installation
+⚙️ Installation and Standalone Setup (Detailed)
 
-Clone the repository:
+Follow these steps to set up CoreSummaryStat + Excel Summary Generator App on your machine and optionally create a standalone executable so users can run it without Python.
 
-```bash
+1️⃣ Install Python
+
+Download Python 3.10 or later from python.org
+.
+
+During installation, check “Add Python to PATH”.
+
+Verify installation:
+```
+python --version
+```
+
+It should show something like:
+
+Python 3.10.x
+
+2️⃣ Install Git (optional, but recommended)
+
+Download Git from git-scm.com
+.
+
+Install with default options.
+
+Verify installation:
+```
+git --version
+```
+3️⃣ Clone the repository
+
+Open your terminal or Command Prompt, navigate to your desired folder, and run:
+```
 git clone https://github.com/username/CoreSummaryStat.git
 cd CoreSummaryStat
 ```
 
-🛠 Usage
-Using as a Python module
-```
-from core_summary import summarize
-import pandas as pd
+If you don’t want to use Git, you can download the ZIP from GitHub and extract it.
 
-df = pd.read_csv('data/sample_data.csv')
-summary_df = summarize(df)
-summary_df.to_excel('output/summary.xlsx', index=False)
+4️⃣ Create a Virtual Environment (Recommended)
+
+Isolate your project dependencies:
 ```
-Using the Excel Summary Generator App
+python -m venv venv
+
+```
+Activate the environment:
+
+Windows:
+```
+venv\Scripts\activate
+
+```
+Mac/Linux:
+```
+source venv/bin/activate
+```
+
+Your terminal should show (venv).
+
+5️⃣ Install Dependencies
+```
+pip install -r requirements.txt
+```
+
+Installs all necessary packages: pandas, openpyxl, PySimpleGUI (or any GUI library used).
+
+Verify by importing in Python:
+```
+import pandas as pd
+import openpyxl
+```
+
+No errors mean the setup is successful.
+
+6️⃣ Run the App
 ```
 python app.py
-
 ```
+
 Follow the prompts to select a dataset.
 
-The app generates summary statistics and saves them as an Excel file.
+The app generates summary statistics and saves them as an Excel file in the output/ folder.
 
-🖥 Making the App External / Executable
+7️⃣ Create a Standalone Executable (Optional)
 
-You can convert the Python app into a standalone Windows executable:
+If you want users to run the app without installing Python, create a Windows executable:
 
-Install pyinstaller:
+Install PyInstaller:
 ```
 pip install pyinstaller
-
 ```
+
 Build the executable:
 ```
 pyinstaller --onefile app.py
-
 ```
-Find the executable in the dist folder.
 
-Share the .exe along with any required data files; users can run it by double-clicking.
+Locate the .exe in the dist/ folder.
 
+Share the .exe with any required data files; users can double-click to run the app.
+
+💡 Tips:
+
+Place sample_data.csv in the same folder as the .exe or update the path in the app.
+
+You can also create a folder for output/ so Excel files are generated in the correct location.
 📂 Project Structure
 ```
 CoreSummaryStat/
