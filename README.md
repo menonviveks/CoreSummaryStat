@@ -30,8 +30,7 @@ Metrics include:
 ### 💾 Export to Excel
 Summary statistics are saved automatically in `.xlsx` format using `openpyxl`.
 
-### 📈 Optional Visualizations
-Generate histograms, boxplots, or charts for exploratory analysis.
+
 
 ---
 
