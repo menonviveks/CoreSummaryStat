@@ -178,3 +178,9 @@ Open a Pull Request
 📜 License
 
 This project is licensed under the MIT License.
+
+🙌 Acknowledgements
+
+Developed by Vivek Menon Sreekumar
+Ph.D. Agricultural Statistics, Department of Agricutural Statistics
+Faculty of Agriculture, Bidhan Chandra Krishi Viswavidyalaya
