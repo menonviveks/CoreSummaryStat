@@ -17,19 +17,39 @@ This excel summary generator application provides an interactive interface to lo
 
 ## 🔄 Pipeline / Workflow
 
-### 📥 Load Data
-Import CSV or Excel datasets using `pandas`.
+📥 Load Data
 
-### 📊 Compute Summary Statistics
+Import CSV or Excel datasets using pandas.
+
+📊 Compute Summary Statistics
+
 Metrics include:
-- Mean, Median, Mode  
-- Variance, Standard Deviation  
-- Minimum, Maximum, Quartiles  
-- Custom calculations
 
-### 💾 Export to Excel
-Summary statistics are saved automatically in `.xlsx` format using `openpyxl`.
+Mean, Median, Mode
 
+Variance, Standard Deviation
+
+Minimum, Maximum, Quartiles
+
+📈 Preview & Export Plots
+
+Visualize your data interactively and save plots for reporting:
+
+Histogram – visualize distribution
+
+Boxplot – detect outliers
+
+Density Plot – smooth data distribution
+
+Violin Plot – distribution and density
+
+Correlation Heatmap – relationships between variables
+
+Plots can be previewed in the app and saved directly as .png files.
+
+💾 Export to Excel
+
+Summary statistics are saved automatically in .xlsx format using openpyxl.
 
 
 ---
@@ -131,7 +151,7 @@ pip install pyinstaller
 Place the icon image in the same folder (.ico format)
 Build the executable:
 ```
-pyinstaller --noconsole --onefile --icon=icon.ico CoreSummarystat.py
+pyinstaller --noconsole --onefile --icon=icon.ico CoreSummarystat_v2.py
 ```
 
 Locate the .exe in the dist/ folder.
@@ -147,7 +167,7 @@ You can also create a folder for output/ so Excel files are generated in the cor
 ```
 CoreSummaryStat/
 │
-├── core_summary.py        # Core functions for summary statistics
+├── CoreSummaryStat_v2.py        # Core functions for summary statistics
 ├── app.py                 # Excel Summary Generator interface
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation
