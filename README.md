@@ -5,7 +5,7 @@
 ![Excel](https://img.shields.io/badge/Excel-217346?logo=microsoftexcel&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-CoreSummaryStat-black?logo=github)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Version](https://img.shields.io/badge/Version-1.0.0-orange)
+![Version](https://img.shields.io/badge/Version-1.0.1-orange)
 
 ---
 
